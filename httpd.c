@@ -44,10 +44,15 @@ int startup(u_short *);
 void unimplemented(int);
 
 /**********************************************************************/
-/* A request has caused a call to accept() on the server port to
+/* 原注释：A request has caused a call to accept() on the server port to
  * return.  Process the request appropriately.
  * Parameters: the socket connected to the client */
 /**********************************************************************/
+/**********************************************************************/
+/*我的注释：处理从套接字上监听到的一个 HTTP 请求
+ *
+ * 
+/**********************************************************************/ 
 void *accept_request(void *tclient)
 {
   int client = *(int *)tclient;
@@ -491,7 +496,7 @@ void unimplemented(int client)
 
 int main(void)
 {
-  int server_sock = -1;
+  int server_sock = -1; //创建服务器端socket 
   u_short port = 0;
   int client_sock = -1;
   struct sockaddr_in client_name;

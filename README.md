@@ -5,13 +5,17 @@ Tinyhttpd 是J. David Blackstone在1999年写的一个不到 500 行的超轻量
 
 源代码是在solaries 上运行的。ubuntu 上运行不了。所以做了一些改动。
 
-*只改动了一些版本兼容的问题。* 其他的分毫未动。 请放心。
+只改动了一些版本兼容的问题。 其他的分毫未动。 请放心。
 
 直接git clone 下来。然后在ubuntu 上make 以下就可以运行了。本人清测没有任何问题。如果编译不过。
 
 欢迎交流打扰。📫：1076536974@qq.com
 
+建议阅读顺序： 
+1. 从main 函数开始看。
 
+
+J. David Blackstone 的原本的readme
 -------------------------------------------------------------------------
 
   This software is copyright 1999 by J. David Blackstone.  Permission
